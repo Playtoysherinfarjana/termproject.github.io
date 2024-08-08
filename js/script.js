@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const loadSection = async (section) => {
-    let url = '';
     if (section === 'home') {
         loadHomePage();
     } else if (section === 'products') {
@@ -93,6 +92,27 @@ const loadProductsPage = async () => {
     } catch (error) {
         console.error('Failed to load products:', error);
     }
+};
+
+const addToCart = (productId) => {
+    console.log(`Adding product ID: ${productId} to cart`);
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const productIndex = cart.findIndex(item => item.id === productId);
+
+    if (productIndex > -1) {
+        cart[productIndex].quantity += 1;
+        console.log(`Product already in cart. New quantity: ${cart[productIndex].quantity}`);
+    } else {
+        cart.push({ id: productId, quantity: 1 });
+        console.log(`Product added to cart with ID: ${productId}`);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert('Product added to cart');
+    console.log('Cart:', cart);
 };
 
 const loadCartPage = async () => {

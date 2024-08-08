@@ -1,0 +1,307 @@
+/*
+Author: Sherin Farjana Sirajudeen sait
+Student number: C0931539
+Date: 06-08-2024
+File Name: style.css
+*/
+
+/* css Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	background-color: #FFC0CB;
+	color: white;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+}
+
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+	background-color: #000;
+	color: white;
+}
+
+nav a {
+	list-style-type: None;
+	text-align: center;
+	display:block;
+	border-top: 1.5px solid #FFC0CB;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:last-child {
+	border-bottom: 1.5px solid #000;;
+}
+
+#container nav {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+#container nav a {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.35em;
+	padding-left: 2%;
+	text-decoration: none;
+}
+
+#Tablet-Desktop {
+	display: none;
+}
+
+.hero-content {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1.5em;
+	margin: 1em;
+	text-align: center;
+}
+
+.hero h2 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.hero p {
+	font-size: 1.5em;
+	margin: 10px 0;
+}
+
+.cta-button {
+	background-color: #FFC0CB;
+	color: white;
+	padding: 0.4em;
+	margin: 0.2em;
+	text-decoration: none;
+	font-size: 1.2em;
+	border-radius: 50px;
+	transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+	background-color: #000;
+}
+
+.testimonials h2 {
+	text-align: center;
+}
+
+.testimonial {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0.3em;
+	margin: 1em;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#featured-product-list .product {
+    margin-bottom: 10%; /* Adjust the value as needed */
+}
+
+
+footer {
+	margin-top: 3em;
+	background-color: #FFC0CB;
+	padding: 0.8%;;
+}
+
+footer p {
+	font-family: 'Roboto Slab', serif;
+	font-size: 0.95em;
+	color: white;
+	text-align: center;
+	margin: 0.2%;
+	padding: 0.2%;
+}
+
+footer a{
+	color: #00f;
+}
+
+
+.featured-products {
+	padding: 2em;
+	text-align:center;
+}
+
+/* Common styles for product and cart items */
+.product, .cart-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product img, .cart-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3, .cart-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product p, .cart-item p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.product .cta-button, .cart-item .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product .cta-button:hover, .cart-item .cta-button:hover {
+    background-color: #FFC0CB;
+}
+
+/* Cart summary styles */
+.cart-total {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.cart-total h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+@media screen and (min-width: 630px), print {
+	
+	img {
+		max-width: 100%;
+	}
+	
+	nav {
+		font-size: 0.80em;
+		text-align: center;
+		margin-bottom: 0;
+		padding-bottom:0;
+	}
+	
+	nav a {
+		border-top: none;
+		display: inline-block;
+		font-family: 'Francois One', sans-serif;
+		font-weight: bold;
+	}
+	
+	#container nav {
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		margin-bottom: 0;
+	}
+	
+	nav a:last-child {
+		border-right: none;
+		border-bottom: none;
+	}
+	
+	#Tablet-Desktop {
+		display: block;
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
+	.hero-content {
+		margin-left: 7em;
+		margin-right: 7em;
+	}
+	
+	.testimonial {
+		margin-left: 4em;
+		margin-right: 4em;
+	}
+	
+	#featured-product-list {
+		display:grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 60px;
+	}
+	
+	#featured-product-list img {
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+		
+	}
+	
+	 .product, .cart-item {
+        width: 60%;
+    }
+	
+}
+
+@media screen and (min-width: 1015px), print {
+	#Tablet-Desktop {
+		display: block;
+		padding-top: 0;
+	}
+	
+	header {
+		padding-bottom: 0.1%
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	nav {
+		text-align: center;
+		font-size: 1.1em;
+		padding: 0.9;
+		margin-bottom: 0;
+	}
+	
+	nav a {
+		padding-bottom: none;
+		padding: 0.3%;
+		padding-left: 8.5%;
+		margin: 0.1%;
+		
+	}
+	
+	.hero-content {
+	margin-left: 11em;
+	margin-right: 11em;
+	padding: 1.5em;
+	}
+	
+	.testimonial {
+		margin-left: 18em;
+		margin-right: 18em;
+	}
+	
+	 .product, .cart-item {
+        width: 40%;
+    }
+}
+
+
+

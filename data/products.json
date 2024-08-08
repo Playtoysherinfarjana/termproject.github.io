@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "Toy Car", "price": 10.99, "image": "images/toy-car.jpg" },
+    { "id": 2, "name": "Toy Train", "price": 14.99, "image": "images/toy-train.jpg" },
+    { "id": 3, "name": "Toy Plane", "price": 19.99, "image": "images/toy-plane.jpg" }
+]

@@ -1,0 +1,20 @@
+<products class="product_list">
+    <product>
+        <id>1</id>
+        <name>Toy Car</name>
+        <price>10.99</price>
+        <image>images/toy-car.jpg</image>
+    </product>
+    <product>
+        <id>2</id>
+        <name>Toy Train</name>
+        <price>14.99</price>
+        <image>images/toy-train.jpg</image>
+    </product>
+    <product>
+        <id>3</id>
+        <name>Toy Plane</name>
+        <price>19.99</price>
+        <image>images/toy-plane.jpg</image>
+    </product>
+</products>

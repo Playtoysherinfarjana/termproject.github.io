@@ -75,7 +75,7 @@ const loadProductsPage = async () => {
 
 		const h2Element = mainContent.querySelector('h2');
 		if (h2Element) {
-			h2Element.style.textAlign = center;
+			h2Element.style.textAlign = 'center';
 		} 
 		
         Array.from(products).forEach(product => {
@@ -133,7 +133,7 @@ const loadCartPage = async () => {
 	
 	const h2Element = mainContent.querySelector('h2');
 	if (h2Element) {
-		h2Element.style.textAlign = center;
+		h2Element.style.textAlign = 'center';
 	}
 
     if (cart.length === 0) {

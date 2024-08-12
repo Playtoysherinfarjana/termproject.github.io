@@ -73,6 +73,11 @@ const loadProductsPage = async () => {
         const mainContent = document.getElementById('main-content');
         mainContent.innerHTML = '<h2>Products</h2>';
 
+		const h2Element = mainContent.querySelector('h2');
+		if (h2Element) {
+			h2Element.style.textAlign = center;
+		} 
+		
         Array.from(products).forEach(product => {
             const id = product.getElementsByTagName('id')[0].textContent;
             const name = product.getElementsByTagName('name')[0].textContent;
@@ -111,7 +116,7 @@ const addToCart = (productId) => {
 
     localStorage.setItem('cart', JSON.stringify(cart));
 
-    alert('Product added to cart');
+    alert('Product added to cart. Check cart for more details.');
     console.log('Cart:', cart);
 };
 
@@ -125,6 +130,11 @@ const loadCartPage = async () => {
 
     const mainContent = document.getElementById('main-content');
     mainContent.innerHTML = '<h2>Cart</h2>';
+	
+	const h2Element = mainContent.querySelector('h2');
+	if (h2Element) {
+		h2Element.style.textAlign = center;
+	}
 
     if (cart.length === 0) {
         mainContent.innerHTML += '<p>Your cart is empty.</p>';

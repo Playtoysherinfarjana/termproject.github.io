@@ -61,6 +61,10 @@ nav a:last-child {
 	display: none;
 }
 
+h2 {
+	text-align:center;
+}
+
 .hero-content {
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 1.5em;
@@ -242,7 +246,7 @@ footer a{
 	#featured-product-list {
 		display:grid;
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		gap: 60px;
+		gap: 6%;
 	}
 	
 	#featured-product-list img {
@@ -285,6 +289,12 @@ footer a{
 		padding-left: 8.5%;
 		margin: 0.1%;
 		
+	}
+	
+	#featured-product-list {
+		display:grid;
+		grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+		gap: 0% 2%;
 	}
 	
 	.hero-content {
